@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/fonts.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <title>Evaluation JS : On travaille avec l’API de Forem (dev.to)</title>
+  </head>
+  <body>
+    <section class="content">
+      <div>
+        <h1 id="titre">
+            Forem
+        </h1>
+      </div>
+      <div class="search-bar">
+        <form action="">
+          <input
+            type="text"
+            id="search_term"
+            name="text"
+            placeholder="Tapez ici votre recherche"
+          />
+        </div>
+       <div>
+        <button class="searchButton" id="searchButton" type="submit">
+          Rechercher
+        </button>
+      </div>
+      </form>
+    </section>
+    <section class="separatueur">
+        <hr class="petit-hr"/>
+        <div>
+        <h3>Résultats correspondants à la recherche : <span id="span"></span></h3>
+        </div>
+      </section>
+    <section id="resultsZone"></section>
+    <script src="/src/main.js"></script>
+    </body>
+    </html>

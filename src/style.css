@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: max-content;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #2e1f27, #5c2a47, #904e6b);
+  color: #f5f5f5;
+  margin-top: 70px;
+  gap: 30px;
+  overflow-x: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  background-color: rgba(255, 255, 255, 0.233);
+  width: 100%;
+  padding: 50px;
+}
+
+.separatueur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px;
+}
+
+.petit-hr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 1px;
+  background: #f5e1da;
+}
+
+#resultsZone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#resultsZone > hr {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#resultsZone > div {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  color: white;
+}
+
+#resultsZone > div > a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+#resultsZone > div > a:hover {
+  color: white;
+  font-weight: bolder;
+  text-shadow: 0 8px 16px rgba(68, 23, 46, 0.8);
+}
