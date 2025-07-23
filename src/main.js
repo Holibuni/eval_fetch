@@ -33,16 +33,17 @@ document.addEventListener("DOMContentLoaded", () => {
   searchButton.addEventListener("click", (event) => {
     event.preventDefault(); // évite le fait que la page se recharge
 
-    const inputValue = searchTermInput.value.trim();
-    articlesContainer.textContent = inputValue;
-    resultsZone.style.display = "block";
+    const inputValue = searchTermInput.value.trim(); // Je récupère le texte tapé dans la barre de recherche
+    resultsZone.style.display = "block"; // affiche dans tous les cas les résultat
 
+    // Dans le cas où il n'y a rien d'écrit dans la barre de recherche, renvoie le message <p>
     if (inputValue.length === 0) {
       resultsZone.innerHTML = "<p>Veuillez entrer un mot-clé.</p>";
       return;
     }
 
+    // J'utilise l'api récuperer les articles avec le même tag
     const apiResult = `https://dev.to/api/articles?per_page=10&tag=${inputValue}`;
-    fetchArticles(apiResult);
+    fetchArticles(apiResult); // Et là j'utilise la fonctione fetchArticles pour aller chercher et afficher les articles en question
   });
 });
